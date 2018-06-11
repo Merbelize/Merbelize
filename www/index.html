@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Merbelize</title>
+    </head>
+	<body onload="myFunction()" style="margin:0;">
+        <script type="text/javascript" src="cordova.js"></script>
+		<img id="loader-logo" src="images/loader-logo.png"></img>
+		<div id="loader"></div>
+		
+		<div style="display:none;" id="content">
+			<div id="landing" class="animate-left">
+				<img id="landing-logo" src="images/landing-logo.png"></img>
+				<br>
+				<i id="landing-icon" class="material-icons">tag_faces</i>
+			</div>
+			<div id="content1" class="animate-left">
+				<i id="content-icon-green" class="material-icons">phone_android</i>
+				<p id="content-title-green">Wat wij voor u doen.</p>
+				<p id="content-text-gray">Wij bij Merbelize maken apps voor <em>Android, IOS en Windows Phone</em>. Dit natuurlijk tegen de <em>laagste</em> prijs. Tevens kunnen wij <em>één app design</em> maken die op <em>alle platformen</em> goed werkt.</p>
+			</div>
+			<div id="content2" class="animate-left">
+				<i id="content-icon-white" class="material-icons">build</i>
+				<p id="content-title-white">Onze projecten.</p>
+				<p id="content-text-white"><b>AquaGids</b><br>Voor aquarium-database AquaGids hebben wij een Android app gemaakt. Deze app functioneert met de huidige website van AquaGids.<br><br><a href='https://play.google.com/store/apps/details?id=com.mvdmerbel1995.AquaGids&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Ontdek het op Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/nl_badge_web_generic.png'/></a></p>
+			</div>
+			<div id="content3" class="animate-left">
+				<i id="content-icon-green" class="material-icons">euro_symbol</i>
+				<p id="content-title-green">Onze prijzen.</p>
+				<p id="content-text-gray">Momenteel zijn de diensten van Merbelize <em>HELEMAAL GRATIS</em>. Dit doen wij om te kijken wat consumenten van ons vinden.<br><br><em>Grijp uw kans en neem contact op via de onderstaande knop!</em></p>
+			</div>
+			<div id="content4" class="animate-left">
+				<a id="contact-button" href="mailto:mvdmerbel1995@gmail.com?subject=App laten maken door Merbelize">Contacteer ons.</a>
+			</div>
+			<div id="footer" class="animate-left">
+				<p id="footer-text">Copyright 2018.<br>Alle rechten voorbehouden.</p>
+				<img id="footer-logo" src="images/landing-logo.png"></img>				
+			</div>
+		</div>
+
+		<script>
+		var myVar;
+
+		function myFunction() {
+			myVar = setTimeout(showPage, 3000);
+		}
+
+		function showPage() {
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("loader-logo").style.display = "none";
+			document.getElementById("content").style.display = "block";
+		}
+		</script>
+
+    </body>
+</html>
